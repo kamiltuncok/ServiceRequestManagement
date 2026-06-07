@@ -1,0 +1,31 @@
+# Visual Studio / .NET Core
+bin/
+obj/
+.vs/
+TestResults/
+*.user
+*.suo
+*.cache
+*.log
+
+# Node.js / React / Vite
+node_modules/
+dist/
+build/
+coverage/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Configuration & Secrets
+appsettings.Development.json
+# launchSettings.json is NOT ignored because it contains standard run profiles and is referenced in the README.
+
+# SQLite Local Database
+# Database is created automatically via EF Core Migrations as stated in README
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
