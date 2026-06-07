@@ -121,9 +121,10 @@ export default function RequestDetail() {
               <p className="text-sm font-medium text-slate-500">Mevcut Durum</p>
               <div className="inline-flex mt-1">
                 <span className={`text-sm rounded-full px-3 py-1 font-medium ${
-                  request.status === 'New' ? 'bg-blue-100 text-blue-800' :
-                  request.status === 'In Progress' ? 'bg-amber-100 text-amber-800' :
-                  request.status === 'Completed' ? 'bg-emerald-100 text-emerald-800' :
+                  request.status === 'New' || request.status === 'Yeni' ? 'bg-blue-100 text-blue-800' :
+                  request.status === 'In Progress' || request.status === 'İşlemde' ? 'bg-amber-100 text-amber-800' :
+                  request.status === 'Completed' || request.status === 'Tamamlandı' ? 'bg-emerald-100 text-emerald-800' :
+                  request.status === 'Cancelled' || request.status === 'İptal Edildi' ? 'bg-red-100 text-red-800' :
                   'bg-slate-100 text-slate-800'
                 }`}>
                   {getTranslatedStatus(request.status)}
