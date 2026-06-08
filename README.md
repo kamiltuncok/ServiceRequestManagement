@@ -1,7 +1,5 @@
 # Service Request Management System
 
-## Screenshots
-
 ### Home Page
 
 ![Home Page](assets/homepage.png)
