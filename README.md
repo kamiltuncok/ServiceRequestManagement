@@ -4,9 +4,14 @@
 
 ![Home Page](assets/homepage.png)
 
+### Request Details
+
+![Request Details](assets/request_details.png)
+
 ### Create Request
 
 ![Create Request](assets/createrequest.png)
+
 
 ## Project Overview
 This is a Full-Stack technical assignment project designed for managing and tracking technical service requests. It consists of a .NET 8 Web API backend and a React/Vite frontend. The repository is configured to demonstrate solid software engineering principles, clean code practices, and modern architectural patterns.
