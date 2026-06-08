@@ -29,6 +29,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseExceptionHandler(errorApp =>
+{
+    errorApp.Run(async context =>
+    {
+        context.Response.StatusCode = 500;
+        context.Response.ContentType = "application/json";
+        await context.Response.WriteAsJsonAsync(new { Success = false, Message = "Sunucu tarafında beklenmedik bir hata oluştu." });
+    });
+});
+
 app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
